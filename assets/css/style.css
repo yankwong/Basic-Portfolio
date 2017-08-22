@@ -122,3 +122,72 @@ footer {
 	line-height: 60px;
 	font-size: 12px;
 }
+
+
+/* Contact Page */
+span.label {
+	display: block;
+}
+input, textarea {
+	width: 100%;
+}
+textarea {
+	min-height: 200px;
+}
+.submit-btn {
+	background-color: #4aaaa5;
+	color: #fff;
+	border-radius: 0;
+	border: 0;
+	width: 100px;
+	height: 40px;
+	font-size: 15px;
+}
+
+
+/* Portfolio Page */
+.port-block {
+	position: relative;
+	width: 48%;
+	margin: 25px 0 20px 0;
+	height: 170px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.port-block.odd {
+	float:left;
+}
+.port-block.even {
+	float: right;
+}
+.port-block.even::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.port-block span.label {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	color: white;
+	background-color: #4aaaa5;
+	bottom: 5px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.port-block.block-1 {
+	background-image: url('../images/cat-01.jpg');
+}
+.port-block.block-2 {
+	background-image: url('../images/cat-02.jpg');
+}
+.port-block.block-3 {
+	background-image: url('../images/cat-03.jpg');
+}
+.port-block.block-4 {
+	background-image: url('../images/cat-04.jpg');
+}
+.port-block.block-5 {
+	background-image: url('../images/cat-05.jpg');
+}
