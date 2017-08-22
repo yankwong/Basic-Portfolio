@@ -1,6 +1,8 @@
 body {
 	background: url('../images/ignasi_pattern_s.png');
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
 }
 
 h1, h2, h3, h4 {
@@ -30,6 +32,7 @@ header {
 	display: flex;
 	align-item: center;
 	padding: 0 50px;
+	flex: 1 0 auto;
 }
 
 header::after {
@@ -69,6 +72,7 @@ header::after {
 }
 
 .main-container {
+	flex: 1 0 auto;
 	/*border: 1px solid #dddddd;*/
 	width: 960px;
 	padding: 0 50px;
@@ -110,9 +114,6 @@ header::after {
 }
 
 footer {
-	position: fixed;
-	width: 100%;
-	bottom: 0;
 	border-top: 5px solid #4aaaa5;
 	background-color: #666666;
 	color: #fff;
