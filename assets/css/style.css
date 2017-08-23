@@ -7,6 +7,9 @@ body {
   	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	flex-direction: column;
 	height: 100vh;
+
+	-webkit-transition: all 2s; /* Safari */
+    transition: all 2s;
 }
 
 h1, h2, h3, h4 {
@@ -30,7 +33,6 @@ p {
 
 hr {
 	margin: 25px 0;
-
     display: block;
     height: 1px;
     border: 0;
@@ -145,7 +147,9 @@ header::after {
 	padding: 25px;
 	border: 1px solid #dddddd;
 }
-
+.left-column hr {
+	border-top: 2px solid #dddddd;
+}
 .right-column hr {
 	
 }
@@ -210,6 +214,32 @@ textarea {
 	background-color: #377F7C;
 }
 
+.contact-me-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.contact-me-modal .modal-inner {
+	background-color: #fff;
+	height: 200px;
+	width: 450px;
+	border: 1px solid #dddddd;
+	padding: 25px;
+}
+
+.contact-me-modal.shown {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal-inner p {
+	margin-top: 30px;
+}
 
 /* Portfolio Page */
 .port-block {
@@ -243,6 +273,8 @@ textarea {
 	bottom: 5px;
 	text-align: center;
 	line-height: 50px;
+	background-color: rgb(74, 170, 165);
+	background-color: rgba(74, 170, 165, 0.7);
 }
 
 .port-block.block-1 {
