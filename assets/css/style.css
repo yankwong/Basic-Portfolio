@@ -214,7 +214,7 @@ textarea {
 	background-color: #377F7C;
 }
 
-.contact-me-modal {
+.contact-me-modal, .portfolio-modal {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -224,7 +224,8 @@ textarea {
 	background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.contact-me-modal .modal-inner {
+.contact-me-modal .modal-inner,
+.portfolio-modal .modal-inner{
 	background-color: #fff;
 	height: 200px;
 	width: 450px;
@@ -232,7 +233,8 @@ textarea {
 	padding: 25px;
 }
 
-.contact-me-modal.shown {
+.contact-me-modal.shown,
+.portfolio-modal.shown {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -275,6 +277,9 @@ textarea {
 	line-height: 50px;
 	background-color: rgb(74, 170, 165);
 	background-color: rgba(74, 170, 165, 0.7);
+}
+.port-block span.label:hover{
+	background-color: rgba(74, 170, 165, 1);	
 }
 
 .port-block.block-1 {

@@ -6,8 +6,7 @@
 		closeModal = function($modal) {
 			$modal.removeClass('shown');
 		},
-		setupModal = function() {
-			var $modal = $('.contact-me-modal');
+		setupContactModal = function($modal) {
 
 			$modal.on('click', function(e) {
 				closeModal($modal);
@@ -17,11 +16,26 @@
 				e.preventDefault();
 				openModal($modal);
 			});
+		},
+		setupPortfolioModal = function($modal) {
+			$modal.on('click', function(e) {
+				closeModal($modal);
+			});
+
+			$('a', '.port-block').on('click', function(e) {
+				e.preventDefault();
+				openModal($modal);
+			});
 		};
 
 
 	$(function(){
-		setupModal();
+		var $contactModal = $('.contact-me-modal'),
+			$portModal = $('.portfolio-modal');
+
+		setupContactModal($contactModal);
+
+		setupPortfolioModal($portModal);
 	});
 
 })(jQuery);
