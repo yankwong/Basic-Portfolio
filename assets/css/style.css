@@ -56,6 +56,12 @@ header::after {
 	clear: both;
 }
 
+.header-wrapper {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
 .site-logo {
 	float: left;
 	color: #fff;
@@ -68,7 +74,7 @@ header::after {
 
 .main-nav {
 	position: absolute;
-	right: 50px;
+	right: 0;
 	display: none;
 }
 
@@ -119,7 +125,7 @@ header::after {
 	flex: 1 0 auto;
 	width: 960px;
 	padding: 0 50px;
-	margin: 25px 0;
+	margin: 25px auto;
 }
 .main-container::after {
 	content: "";
